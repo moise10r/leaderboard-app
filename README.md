@@ -2,9 +2,10 @@
 
 # To Do list
 
-> To Do List is a website that helps you manage your tasks and projects, You can add Tasks to existing projects, create new projects, delete projects, modify or delete your tasks for a particular project.
+> 
 
-![screen](https://user-images.githubusercontent.com/57562869/125509482-060712bf-5482-4058-8706-37bae6d952df.png)
+![screenshot (1)](https://user-images.githubusercontent.com/57562869/127155600-2d914ccc-d0b5-4bf5-bb90-4ed56b2003b5.png)
+
 
 ## Live Demo
 [See live](https://moise10r.github.io/Todo-task-List/dist/)
