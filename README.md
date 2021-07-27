@@ -7,8 +7,6 @@
 ![screenshot (1)](https://user-images.githubusercontent.com/57562869/127155600-2d914ccc-d0b5-4bf5-bb90-4ed56b2003b5.png)
 
 
-## Live Demo
-[See live](https://moise10r.github.io/Todo-task-List/dist/)
 
 ## Built With
 
