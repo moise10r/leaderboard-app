@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# To Do list
+# LeaderBoard
 
 > 
 
@@ -20,7 +20,7 @@
 
 **To get the local copy of the project up and running you will need to run the following commands on your terminal:**
 
-`git clone https://github.com/moise10r/Todo-task-List.git`
+`git clone git@github.com:moise10r/leaderboard-app.git`
 
 To install all the available dependecies run:
 `npm install`
@@ -38,7 +38,7 @@ And then open your browser on the port 3000
 - Twitter: [@twitterhandle](https://twitter.com/MRushanika)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/nganulo-rushanika-mo%C3%AFse-626139197/)
 
-
+![GitHub stats](https://github-readme-stats.vercel.app/api?username=moise10r&show_icons=true&hide_border=true)
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
