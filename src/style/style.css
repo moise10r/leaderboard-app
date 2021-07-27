@@ -1,0 +1,152 @@
+/* Typography */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input,
+button {
+  outline: none;
+  border: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.main-section {
+  width: 100%;
+}
+
+.main-section h1 {
+  margin: 4rem 0 0 10rem;
+}
+
+.main-container-section {
+  width: 100%;
+  height: 100%;
+}
+
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  align-items: flex-start;
+}
+
+.main-left-wrappe {
+  width: 50%;
+  flex-direction: column;
+}
+
+.refresh-container {
+  width: 100%;
+}
+
+.refresh-container p {
+  margin-right: 2rem;
+  font-size: 1.8rem;
+}
+
+.refresh-container button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.scores-list {
+  width: 100%;
+  flex-direction: column;
+  margin-top: 2rem;
+  border: 1px solid #ccc;
+}
+
+.scores-list li {
+  width: 100%;
+  padding: 1rem 0 1rem 1rem;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+}
+
+.scores-list li span:last-child {
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+.scores-list li:nth-child(2n-1) {
+  background-color: rgb(221, 221, 221);
+}
+
+.main-right-wrapper {
+  width: 40%;
+  margin-left: 5rem;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-right-wrapper h2 {
+  margin-bottom: 2rem;
+  font-style: italic;
+}
+
+.main-right-wrapper #add-score {
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-right-wrapper #add-score input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+.main-right-wrapper #add-score button {
+  padding: 0.6rem 1.5rem;
+  background-color: rgb(122, 121, 121);
+  color: #fff;
+  font-size: 1rem;
+  align-self: flex-end;
+}
