@@ -25,7 +25,7 @@ To install all the available dependecies run:
 
 To run this application locally :
 `npm run start:Dev`
-And then open your browser on the port 3000
+And then open your browser on the port 9000
 
 
 ## Authors
