@@ -34,5 +34,5 @@ window.addEventListener('load', async () => {
     console.log(res);
     render(res);
   });
-  form.reset();
+  form.target.reset();
 });
