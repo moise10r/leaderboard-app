@@ -150,3 +150,18 @@ li {
   font-size: 1rem;
   align-self: flex-end;
 }
+
+@media screen and (max-width:900px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .main-left-wrappe {
+    width: 100%;
+  }
+
+  .main-right-wrapper {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}

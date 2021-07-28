@@ -1,6 +1,7 @@
 import './style/style.css';
+import { getGame } from './contollers';
 
-const displayUI = () => {
+const render = () => {
   const scoresList = document.querySelector('.scores-list');
   scoresList.innerHTML += ` <li class="score">
       <span>Name: </span>
@@ -21,5 +22,5 @@ const displayUI = () => {
       <span>10</span>
     </li>`;
 };
-
-displayUI();
+console.log(getGame());
+render();
