@@ -70,8 +70,7 @@ li {
 
 .main-wrapper {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 6rem;
+  margin: 6rem auto;
   align-items: flex-start;
 }
 
@@ -92,6 +91,9 @@ li {
 .refresh-container button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
+  background-color: rgba(0, 0, 255, 0.548);
+  border-radius: 0.5rem;
+  color: #fff;
 }
 
 .scores-list {
@@ -145,8 +147,24 @@ li {
 
 .main-right-wrapper #add-score button {
   padding: 0.6rem 1.5rem;
-  background-color: rgb(122, 121, 121);
+  background-color: rgba(0, 0, 255, 0.548);
   color: #fff;
   font-size: 1rem;
   align-self: flex-end;
+  border-radius: 0.5rem;
+}
+
+@media screen and (max-width: 900px) {
+  .main-wrapper {
+    flex-direction: column;
+  }
+
+  .main-left-wrappe {
+    width: 100%;
+  }
+
+  .main-right-wrapper {
+    width: 80%;
+    margin: 2rem auto;
+  }
 }
