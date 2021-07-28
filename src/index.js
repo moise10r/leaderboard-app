@@ -1,5 +1,5 @@
 import './style/style.css';
-import { getGame, createGame } from './contollers';
+import { getGame, createGame,getId } from './contollers';
 
 const render = () => {
   const scoresList = document.querySelector('.scores-list');
@@ -25,8 +25,8 @@ const render = () => {
 
 const form = document.getElementById('add-score');
 const inputs = form.querySelectorAll('input');
-console.log(inputs);
-form.addEventListener('submit', (e) => {
+
+form.addEventListener('submit', async (e) => {
   e.preventDefault();
   const name = inputs[0].value;
   const score = inputs[1].value;
@@ -34,9 +34,7 @@ form.addEventListener('submit', (e) => {
     name,
     score,
   };
-  // createGame(data);
-  console.log(createGame(data));
-  console.log(data);
+  const id = await createGame(data);
+  getId(id);
 });
-// console.log(getGame());
 render();
