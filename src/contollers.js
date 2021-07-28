@@ -1,11 +1,14 @@
 /* eslint-disable import/prefer-default-export */
 import * as Api from './api';
 
-export const createGame = async (data) => {
-  const { result } = await Api.post('games/', JSON.stringify(data));
+export const createGame = async (name) => {
+  const { result } = await Api.post('games/', JSON.stringify({ name }));
   return result;
 };
 
-export const getId = (id) => id.split(' ')[3];
+export const getGames = () => Api.get('games/a/scores/');
 
-export const getGame = () => Api.get('games/Zl4d7IVkemOTTVg2fUdz/scores/');
+export const submitScore = async (data, id) => {
+  const { result } = await Api.post(`games/${id}/scores/`, JSON.stringify(data));
+  return result;
+};

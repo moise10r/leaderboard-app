@@ -1,5 +1,5 @@
 import './style/style.css';
-import { getGame, createGame,getId } from './contollers';
+import { getGame, submitScore , createGame} from './contollers';
 
 const render = () => {
   const scoresList = document.querySelector('.scores-list');
@@ -26,15 +26,20 @@ const render = () => {
 const form = document.getElementById('add-score');
 const inputs = form.querySelectorAll('input');
 
-form.addEventListener('submit', async (e) => {
-  e.preventDefault();
-  const name = inputs[0].value;
-  const score = inputs[1].value;
-  const data = {
-    name,
-    score,
-  };
-  const id = await createGame(data);
-  getId(id);
+const gameName = 'sokoba';
+window.addEventListener('load', async () => {
+  const result = await createGame(gameName);
+  const id = result.split(' ')[3];
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const name = inputs[0].value;
+    const score = inputs[1].value;
+    const data = {
+      name,
+      score,
+    };
+    await submitScore(data, id);
+  });
 });
+
 render();
