@@ -1,5 +1,5 @@
 import './style/style.css';
-import { getGame, submitScore , createGame} from './contollers';
+import { getGame, submitScore, createGame } from './contollers';
 
 const render = () => {
   const scoresList = document.querySelector('.scores-list');
@@ -32,13 +32,14 @@ window.addEventListener('load', async () => {
   const id = result.split(' ')[3];
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    const name = inputs[0].value;
+    const user = inputs[0].value;
     const score = inputs[1].value;
     const data = {
-      name,
+      user,
       score,
     };
-    await submitScore(data, id);
+    const result = await submitScore(data, id);
+    console.log(result);
   });
 });
 
