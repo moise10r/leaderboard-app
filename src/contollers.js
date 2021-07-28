@@ -6,7 +6,10 @@ export const createGame = async (name) => {
   return result;
 };
 
-export const getGames = () => Api.get('games/a/scores/');
+export const getGames = async (id) => {
+  const { result } = await Api.get(`games/${id}/scores/`);
+  return result;
+};
 
 export const submitScore = async (data, id) => {
   const { result } = await Api.post(`games/${id}/scores/`, JSON.stringify(data));
