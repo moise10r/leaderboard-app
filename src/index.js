@@ -28,10 +28,10 @@ window.addEventListener('load', async () => {
       score,
     };
     await submitScore(data, id);
+    form.reset();
   });
   refreshBtn.addEventListener('click', async () => {
     const res = await getGames(id);
     render(res);
   });
-  form.target.reset();
 });
