@@ -70,8 +70,7 @@ li {
 
 .main-wrapper {
   width: 80%;
-  margin: 0 auto;
-  margin-top: 6rem;
+  margin: 6rem auto;
   align-items: flex-start;
 }
 

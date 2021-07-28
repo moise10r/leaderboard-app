@@ -3,12 +3,12 @@ import { getGames, submitScore, createGame } from './contollers';
 
 const render = (scores) => {
   const scoresList = document.querySelector('.scores-list');
+  scoresList.innerHTML = '';
   scores.forEach(({ user, score }) => {
-    scoresList.innerHTML += ` 
-      <li class="score">
-        <span>${user}: </span>
-        <span>${score}</span>
-      </li>`;
+    const li = document.createElement('li');
+    li.classList.add('score');
+    li.innerHTML = `<span>${user}</span>: <span>${score}</span>`;
+    scoresList.appendChild(li);
   });
 };
 
@@ -31,6 +31,8 @@ window.addEventListener('load', async () => {
   });
   refreshBtn.addEventListener('click', async () => {
     const res = await getGames(id);
+    console.log(res);
     render(res);
   });
+  form.reset();
 });
