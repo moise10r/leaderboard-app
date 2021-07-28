@@ -31,7 +31,6 @@ window.addEventListener('load', async () => {
   });
   refreshBtn.addEventListener('click', async () => {
     const res = await getGames(id);
-    console.log(res);
     render(res);
   });
   form.target.reset();
