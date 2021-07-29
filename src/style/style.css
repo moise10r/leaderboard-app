@@ -39,23 +39,23 @@ button {
 button::before {
   position: absolute;
   top: 0;
-   left: 0;
-            right: 0;
-            bottom: 0;
-            content: "";
-            border-radius: 0.5rem;
-            /* background-color: lighten($black-ground-color, 90); */
-            background-color: #6a93cb;
-background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
-            transition: transform 700ms;
-            transform-origin: left;
-            transform: scaleX(0);
-            z-index: -1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  border-radius: 0.5rem;
+  background-color: #6a93cb;
+  background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+  transition: transform 700ms;
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: -1;
 }
 
 button:hover::before {
   transform: scaleX(1);
 }
+
 ul,
 li {
   list-style: none;
@@ -149,7 +149,7 @@ li {
 }
 
 .scores-list li span {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
 }
 
