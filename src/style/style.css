@@ -26,6 +26,12 @@ button {
 
 button {
   cursor: pointer;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  color: #fff;
+  font-size: 1rem;
+  align-self: flex-end;
+  border-radius: 0.5rem;
 }
 
 ul,
@@ -92,11 +98,6 @@ li {
 
 .refresh-container button {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: #2a2a72;
-  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-  border-radius: 0.5rem;
-  color: #fff;
 }
 
 .scores-list {
@@ -161,12 +162,6 @@ li {
 
 .main-right-wrapper #add-score button {
   padding: 0.6rem 1.5rem;
-  background-color: #2a2a72;
-background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-  color: #fff;
-  font-size: 1rem;
-  align-self: flex-end;
-  border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 900px) {
