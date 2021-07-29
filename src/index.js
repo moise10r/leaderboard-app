@@ -7,7 +7,7 @@ const render = (scores) => {
   scores.forEach(({ user, score }) => {
     const li = document.createElement('li');
     li.classList.add('score');
-    li.innerHTML = `<span>${user}</span>: <span>${score}</span>`;
+    li.innerHTML = `<span>${user}:</span><span>${score}</span>`;
     scoresList.appendChild(li);
   });
 };

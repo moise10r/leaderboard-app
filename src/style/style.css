@@ -9,6 +9,8 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 
 a {
@@ -91,7 +93,8 @@ li {
 .refresh-container button {
   padding: 0.5rem 1rem;
   font-size: 1rem;
-  background-color: rgba(0, 0, 255, 0.548);
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   border-radius: 0.5rem;
   color: #fff;
 }
@@ -114,6 +117,12 @@ li {
   align-items: center;
   background-color: #bdd4e7;
   background-image: linear-gradient(315deg, #bdd4e7 0%, #8693ab 74%);
+  border-radius: 0.5rem;
+}
+
+.scores-list li span {
+  font-size: 1.2rem;
+  color: #fff;
 }
 
 .scores-list li span:last-child {
@@ -152,7 +161,8 @@ li {
 
 .main-right-wrapper #add-score button {
   padding: 0.6rem 1.5rem;
-  background-color: rgba(0, 0, 255, 0.548);
+  background-color: #2a2a72;
+background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
   color: #fff;
   font-size: 1rem;
   align-self: flex-end;
