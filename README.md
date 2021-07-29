@@ -4,9 +4,12 @@
 
 > 
 
-![screenshot](https://user-images.githubusercontent.com/57562869/127408084-afefbef7-9fb7-490e-a4f7-4ccf90eff582.png)
+![screenshot (1)](https://user-images.githubusercontent.com/57562869/127483906-77bbee81-5f64-4c3b-bfab-5402c0b20f1a.png)
 
-
+The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external.
+[Leaderboard API service.](https://www.notion.so/microverse/Leaderboard-API-service-24c0c3c116974ac49488d4eb0267ade3)
+## Live demo
+[See Project](https://moise10r.github.io/leaderboard-app/dist/)
 
 ## Built With
 
@@ -18,13 +21,15 @@
 
 **To get the local copy of the project up and running you will need to run the following commands on your terminal:**
 
-`git clone git@github.com:moise10r/leaderboard-app.git`
+- ``git clone git@github.com:moise10r/leaderboard-app.git``
 
 To install all the available dependecies run:
-`npm install`
+- ``npm install``
 
 To run this application locally :
-`npm run start:Dev`
+
+- `npm run start:Dev`
+
 And then open your browser on the port 9000
 
 

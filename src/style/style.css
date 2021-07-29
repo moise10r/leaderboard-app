@@ -9,6 +9,8 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #0cbaba;
+  background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
 }
 
 a {
@@ -24,6 +26,34 @@ button {
 
 button {
   cursor: pointer;
+  background-color: #2a2a72;
+  background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+  color: #fff;
+  font-size: 1rem;
+  align-self: flex-end;
+  border-radius: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+button::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  border-radius: 0.5rem;
+  background-color: #6a93cb;
+  background-image: linear-gradient(315deg, #6a93cb 0%, #a4bfef 74%);
+  transition: transform 700ms;
+  transform-origin: left;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+button:hover::before {
+  transform: scaleX(1);
 }
 
 ul,
@@ -61,6 +91,9 @@ li {
 
 .main-section h1 {
   margin: 4rem 0 0 10rem;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #fff;
 }
 
 .main-container-section {
@@ -86,29 +119,36 @@ li {
 .refresh-container p {
   margin-right: 2rem;
   font-size: 1.8rem;
+  color: #fff;
 }
 
 .refresh-container button {
   padding: 0.5rem 1rem;
-  font-size: 1rem;
-  background-color: rgba(0, 0, 255, 0.548);
-  border-radius: 0.5rem;
-  color: #fff;
 }
 
 .scores-list {
   width: 100%;
   flex-direction: column;
   margin-top: 2rem;
-  border: 1px solid #ccc;
+  border: 3px solid #ccc;
+  border-radius: 0.5rem;
 }
 
 .scores-list li {
   width: 100%;
-  padding: 1rem 0 1rem 1rem;
+  padding: 0.5rem 0 0.5rem 1rem;
   border-bottom: 1px solid #ccc;
   display: flex;
   align-items: center;
+  background-color: #8989bb;
+  background-image: linear-gradient(315deg, #8989bb 0%, #a5a4cb 74%);
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.scores-list li span {
+  font-size: 1.3rem;
+  color: #fff;
 }
 
 .scores-list li span:last-child {
@@ -117,7 +157,20 @@ li {
 }
 
 .scores-list li:nth-child(2n-1) {
-  background-color: rgb(221, 221, 221);
+  background-color: #abe9cd;
+  background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.avatar img {
+  width: 100%;
 }
 
 .main-right-wrapper {
@@ -130,6 +183,7 @@ li {
 .main-right-wrapper h2 {
   margin-bottom: 2rem;
   font-style: italic;
+  color: #fff;
 }
 
 .main-right-wrapper #add-score {
@@ -147,11 +201,6 @@ li {
 
 .main-right-wrapper #add-score button {
   padding: 0.6rem 1.5rem;
-  background-color: rgba(0, 0, 255, 0.548);
-  color: #fff;
-  font-size: 1rem;
-  align-self: flex-end;
-  border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 900px) {

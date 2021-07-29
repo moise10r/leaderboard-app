@@ -1,4 +1,5 @@
 import './style/style.css';
+import avatar from './avatar.jpg';
 import { getGames, submitScore, createGame } from './contollers';
 
 const render = (scores) => {
@@ -7,7 +8,12 @@ const render = (scores) => {
   scores.forEach(({ user, score }) => {
     const li = document.createElement('li');
     li.classList.add('score');
-    li.innerHTML = `<span>${user}</span>: <span>${score}</span>`;
+    li.innerHTML = `
+    <span class="flex-center">
+      <span><img class="avatar" src="${avatar}" alt="avatar"></span>
+      <span> ${user}:</span>
+    </span>
+    <span>${score}</span>`;
     scoresList.appendChild(li);
   });
 };
