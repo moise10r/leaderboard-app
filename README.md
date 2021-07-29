@@ -6,7 +6,8 @@
 
 ![screenshot (1)](https://user-images.githubusercontent.com/57562869/127483906-77bbee81-5f64-4c3b-bfab-5402c0b20f1a.png)
 
-
+## Live demo
+[See Project](https://moise10r.github.io/leaderboard-app/dist/)
 
 ## Built With
 
