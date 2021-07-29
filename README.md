@@ -21,13 +21,14 @@ The leaderboard website displays scores submitted by different players. It also 
 
 **To get the local copy of the project up and running you will need to run the following commands on your terminal:**
 
-`git clone git@github.com:moise10r/leaderboard-app.git`
+- ``git clone git@github.com:moise10r/leaderboard-app.git``
 
 To install all the available dependecies run:
-`npm install`
+- ``npm install``
 
 To run this application locally :
-`npm run start:Dev`
+- `npm run start:Dev`
+
 And then open your browser on the port 9000
 
 
