@@ -2,6 +2,29 @@ import './style/style.css';
 import avatar from './avatar.jpg';
 import { getGames, submitScore, createGame } from './contollers';
 
+const section = document.querySelector('.main-container-section');
+
+section.innerHTML = `
+<div class="main-wrapper flex-center">
+<div class="main-left-wrappe flex-center">
+  <div class="refresh-container flex-between">
+    <p>Recent Scores</p>
+    <button type="button" class="refresh">Refresh</button>
+  </div>
+  <ul class="scores-list flex-center">
+  </ul>
+</div>
+<div class="main-right-wrapper flex-center">
+  <h2>Add your score</h2>
+  <form id="add-score"  class="flex-center" action="/">
+    <input type="text" placeholder="Your name">
+    <input type="text" placeholder="Your score">
+    <button type="submit">submit</button>
+  </form>
+</div>
+</div>
+`;
+
 const render = (scores) => {
   const scoresList = document.querySelector('.scores-list');
   scoresList.innerHTML = '';
