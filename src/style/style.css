@@ -210,6 +210,7 @@ li {
   
   .main-section h1 {
     margin: 0;
+    text-align: center;
     margin-top: 1rem;
     font-size: 2rem;
   }
