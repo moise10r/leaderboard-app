@@ -17,8 +17,8 @@ section.innerHTML = `
 <div class="main-right-wrapper flex-center">
   <h2>Add your score</h2>
   <form id="add-score"  class="flex-center" action="/">
-    <input type="text" placeholder="Your name">
-    <input type="text" placeholder="Your score">
+    <input type="text" placeholder="Your name" required>
+    <input type="number" placeholder="Your score" required>
     <button type="submit">submit</button>
   </form>
 </div>
